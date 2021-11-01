@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>AvasyuTech</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="libs/slick/slick-theme.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB-6hiNPucXS0EUfcd0YnX0b0PHt3VW-3E",
+    authDomain: "avasyu-41e23.firebaseapp.com",
+    projectId: "avasyu-41e23",
+    storageBucket: "avasyu-41e23.appspot.com",
+    messagingSenderId: "968935270612",
+    appId: "1:968935270612:web:8da203efc891cc0fdc3341"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+        <div class="wrapper">
+            <!-- Header Start -->
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2">
+                            <div class="brand">
+                                <a href="index.html">
+                                    <img src="img/avas.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="topbar">
+                                <div class="topbar-col">
+                                    <a href="tel:+91 9100471788"><i class="fa fa-phone-alt"></i>+91 9100471788</a>
+                                </div>
+                                <div class="topbar-col">
+                                    <a href="mailto:avasyutechnicals@gmail.com"><i class="fa fa-envelope"></i>avasyutechnicals@gmail.com</a>
+                                </div>
+                                <div class="topbar-col">
+                                    <div class="topbar-social">
+                                        <a href="https://www.facebook.com/avasyutechnicals.avasyutechnicals.5"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/avasyutechnicals/"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/company/viba-vaagdevi-incubation-and-business-accelerator/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar navbar-expand-lg bg-light navbar-light">
+                                <a href="#" class="navbar-brand">MENU</a>
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                    <div class="navbar-nav ml-auto">
+                                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                                        <a href="about.html" class="nav-item nav-link">About Us</a>
+                                        <a href="services.html" class="nav-item nav-link">Services</a>
+                                        <a href="mentors.html" class="nav-item nav-link">Mentors</a>
+                                        <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header End -->            <!-- Hero Start -->
+            <div class="hero">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h2>We Cherish the</h2>
+                            <h2><span>Innate Capabilities.</span></h2>
+                            <p>We AvasyuTech raised as an EdTech Platform which looks in to innate capabilities of an individual and map them to required skills jobroles which are available in market.</p>
+                            <a class="btn" href="https://htmlcodex.com/bootstrap-agency-template">Read More</a>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/avasyu.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero End -->
+            
+            
+            <!-- About Start -->
+            <div class="about">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div id="video-section">
+                                <div class="youtube-player" data-id="jssO8-5qmag"></div>
+                                
+                                <script>
+                                    document.addEventListener("DOMContentLoaded",
+                                        function() {
+                                            var div, n,
+                                                v = document.getElementsByClassName("youtube-player");
+                                            for (n = 0; n < v.length; n++) {
+                                                div = document.createElement("div");
+                                                div.setAttribute("data-id", v[n].dataset.id);
+                                                div.innerHTML = labnolThumb(v[n].dataset.id);
+                                                div.onclick = labnolIframe;
+                                                v[n].appendChild(div);
+                                            }
+                                        });
+
+                                    function labnolThumb(id) {
+                                        var thumb = '<img src="img/avas.png">',
+                                            play = '<div class="play"></div>';
+                                        return thumb.replace("ID", id) + play;
+                                    }
+
+                                    function labnolIframe() {
+                                        var iframe = document.createElement("iframe");
+                                        var embed = "https://www.youtube.com/embed/mE_CjVRDKrs/autoplay=1";
+                                        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+                                        iframe.setAttribute("frameborder", "0");
+                                        iframe.setAttribute("allowfullscreen", "1");
+                                        this.parentNode.replaceChild(iframe, this);
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="section-title">Learn About Us</h2>
+                            <p>
+                                We AvasyuTech raised up as an EdTech platform to ease students in choosing their career desired and also offer guidance accordingly and we do so by offering a self assessment questionnaire trivia in their choice of career picked.
+The prime motive of our start is to unchain students from the self and societal ties they are engulfed into and liberate themselves to walk into their desired career roles.
+                            </p>
+                            <p>
+                                This very idea of exploring the innate capability in students and tending them to excel in their career interests makes AvasyuTech stand apart and bloom in the EdTech market.
+                            </p>
+                            <p>
+                                We incorporate a hands-on approach through our 'Holistic approach' to emphasize students on solving real world problems and enable them to move forward and form a healthy interaction and networking with everyone.
+                            </p>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+            <div class="news">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="img/puz.jpg" alt="Image">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="section-title">How we help you in chasing your dreams?</h2>
+                            <p>
+                                The ultimate reach in the chase of acquiring skills is to secure a job. We assure to guide and improve you in the sphere of your interest and place you in a job role that suits your skills.
+                            </p>
+                            <p>
+                                We initially analyze you with a basic questionnaire quiz. It enables you to self-assess and gives us a scale of your potent with basics through which we can guide you accordingly.
+                            </p>
+                            <p>
+                                Mentor is the one who helps you to explore your field of passion. We provide the best mentors who helps you in every domain and are available at anytime to assist you.
+                            </p>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Start -->
+            <div class="service">
+                <div class="container-fluid">
+                    <div class="section-header">
+                        <h2>Our Services</h2> 
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <h3>Mentorship</h3>
+                                <img src="img/MENTORSHIP.fac3b46d.png" alt="Service">
+                                <p>With some of the best-experienced mentors onboard that commits to change and inspire the youth in every possible way throughout.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <h3>Remote Learning</h3>
+                                <img src="img/REMOTE.b47fb83a.png" alt="Service">
+                                <p>We provide programs where students can avail knowledge in multiples disciplines from the comfort of their homes and learn the skills needed to be industry-ready.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <h3>Internships</h3>
+                                <img src="img/INTERNSHIP.3f77d6d8.png" alt="Service">
+                                <p>We provide many comprehensive, career-building internship opportunities for students. Be recognized through AvasyuTech for the work you do and the talent you bring.
+
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row" style="justify-content: center;">
+                        <a class="btn-my" href="services.html">See more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+
+
+
+
+            <div class="service mt-3" style="background: linear-gradient(to right, #00539C, #4F84C4 50%);">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 style="color:white">Our Clients</h2> 
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1 hide-on-med"></div>
+                        <div class="col-lg-1 hide-on-med"></div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img first"  src="img/vag.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/gm.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/ufc.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/jips-removebg-preview.png" alt="Service">
+                        </div>
+                        <div class="col-lg-1 hide-on-med"></div>
+                        <div class="col-lg-1 hide-on-med"></div>
+                        <div class="col-lg-1 hide-on-med"></div>
+                        <div class="col-lg-1 hide-on-med"></div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/findia.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/LOGO_LAALM-removebg-preview.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/adcon2-removebg-preview.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/cozy.png" alt="Service">
+                        </div>
+                        <div class="col-lg-1 hide-on-med"></div>
+                        <div class="col-lg-1 hide-on-med"></div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+
+            <div class="service">
+                <div class="container">
+                    <div class="section-header" style="margin-bottom: 20px;">
+                        <h2>Our Packages</h2> 
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <a class="btn-my-2" href="javascript:showtab('tab-1')" autofocus>first</a>
+                        <a class="btn-my-2" href="javascript:showtab('tab-2')">Second</a>
+                        <a class="btn-my-2" href="javascript:showtab('tab-3')">Third</a>
+                    </div>
+                    <div class="row pt-4" id="tab-container">
+                        
+                        
+                    </div>
+                    
+                    <div id="tab-1" style="display:none">
+                        <div class="col-lg-6 col-md-6" style="text-align: center;">
+                            <h3 style="font-size: large;"><b>Job opportunities in AGREPADH...!</b> </h3>
+                            <a class="nav-link" style="font-size:medium">IT Jobs</a>
+                            <a class="nav-link" style="font-size:medium">Management & Business related Jobs</a>
+                            <a class="nav-link" style="font-size:medium">Banking Jobs</a>
+                            <a class="nav-link" style="font-size:medium">Jobs in railways</a>
+                            <a class="nav-link" style="font-size:medium">Jobs in Defence sector</a>
+                            <a class="nav-link" style="font-size:medium">SSC (Staff Selection Commission) Jobs</a>
+                            <a class="nav-link" style="font-size:medium">Groups & Civil Service Jobs</a>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="text-align: center;">
+                                <div class="card-body" style="border: 2px solid black;">
+                                  <h5 class="card-title" style="font-size: x-large;">Agrepadh</h5>
+                                  <p class="card-text" style="font-size: medium;">Self-guage your skills on</p>
+                                  <p style="font-size: medium;">Aptitude<br>Logical<br>&<br>English</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" style="display:none">
+                        <div class="col-lg-6 col-md-6" class="second-tab" style="text-align: center;">
+                            <h3 style="font-size: large;"><b>Skills</b> </h3>
+                            <p>Select a skill below...!</p>
+                            <a class="nav-link gga" style="font-size:medium" href="javascript:showtab2('stab-1')">Analysis</a>
+                            <a class="nav-link gga" style="font-size:medium" href="javascript:showtab2('stab-2')">Content Writing</a>
+                            <a class="nav-link gga" style="font-size:medium" href="javascript:showtab2('stab-3')">Art</a>
+                            <a class="nav-link gga" style="font-size:medium" href="javascript:showtab2('stab-4')">Marketing</a>
+                            <a class="nav-link gga" style="font-size:medium" href="javascript:showtab2('stab-5')">Organizing</a>
+                            <a class="nav-link gga" style="font-size:medium" href="javascript:showtab2('stab-6')">Collaboration</a>
+                            <a class="nav-link gga" style="font-size:medium" href="javascript:showtab2('stab-7')">Communication</a>
+                            <a class="nav-link gga" style="font-size:medium" href="javascript:showtab2('stab-8')">Leadership</a>
+                            <a class="nav-link gga" style="font-size:medium" href="javascript:showtab2('stab-9')">Aptitude</a>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id='tab2-container' style="text-align: center; height: 500px; overflow-y: auto;">
+                            
+                        </div>
+                        <div id="stab-1" style="display: none;">
+                            <h3 style="font-size: large;"><b>Job opportunities for the Selected Skill...!</b> </h3>
+                            <a class="nav-link" style="font-size:medium">Data scientist</a>
+                            <a class="nav-link" style="font-size:medium">Business analyst</a>
+                            <a class="nav-link" style="font-size:medium">Quantitative analyst</a>
+                            <a class="nav-link" style="font-size:medium">Quality Assurance Engineer</a>
+                            <a class="nav-link" style="font-size:medium">Project coordinator</a>
+                            <a class="nav-link" style="font-size:medium">System analyst</a>
+                            <a class="nav-link" style="font-size:medium">Test analyst</a>
+                            <a class="nav-link" style="font-size:medium">Reporting analyst</a>
+                            <a class="nav-link" style="font-size:medium">Subject expert</a>
+                            <a class="nav-link" style="font-size:medium">Marketing analyst</a>
+                            <a class="nav-link" style="font-size:medium">Sales analyst</a>
+                            <a class="nav-link" style="font-size:medium">Operations analyst</a>
+                            <a class="nav-link" style="font-size:medium">Pre-sales consultant</a>
+                            <a class="nav-link" style="font-size:medium">Actuary</a>
+                            <a class="nav-link" style="font-size:medium">Budget estimator</a>
+                        </div>
+                        <div id="stab-2" style="display: none;">
+                            <h3 style="font-size: large;"><b>Job opportunities for the Selected Skill...!</b> </h3>
+                            <a class="nav-link" style="font-size:medium">Web content writer</a>
+                            <a class="nav-link" style="font-size:medium">Freelancer</a>
+                            <a class="nav-link" style="font-size:medium">Editor</a>
+                            <a class="nav-link" style="font-size:medium">Creative writer</a>
+                            <a class="nav-link" style="font-size:medium">Blogger</a>
+                            <a class="nav-link" style="font-size:medium">Script writer</a>
+                            <a class="nav-link" style="font-size:medium">Marketing content writer</a>
+                            <a class="nav-link" style="font-size:medium">Digital content specialist</a>
+                            <a class="nav-link" style="font-size:medium">Article writer</a>
+                            <a class="nav-link" style="font-size:medium">Research paper writer</a>
+                            <a class="nav-link" style="font-size:medium">Journalist</a>
+                            <a class="nav-link" style="font-size:medium">Interviewer</a>
+                            <a class="nav-link" style="font-size:medium">Copy writers</a>
+                            <a class="nav-link" style="font-size:medium">Technical writers</a>
+                            <a class="nav-link" style="font-size:medium">Social media writer</a>
+                            <a class="nav-link" style="font-size:medium">E-mail writer</a>
+                            <a class="nav-link" style="font-size:medium">Promo writer</a>
+                            <a class="nav-link" style="font-size:medium">Script writer</a>
+                            <a class="nav-link" style="font-size:medium">Long form content writer</a>
+                        </div>                        
+                        <div id="stab-3" style="display: none;">
+                            <h3 style="font-size: large;"><b>Job opportunities for the Selected Skill...!</b> </h3>
+                            <a class="nav-link" style="font-size:medium">Design lecturer</a>
+                            <a class="nav-link" style="font-size:medium">Illustrator</a>
+                            <a class="nav-link" style="font-size:medium">Art or web Curator</a>
+                            <a class="nav-link" style="font-size:medium">Fashion designer</a>
+                            <a class="nav-link" style="font-size:medium">Makeup artist</a>
+                            <a class="nav-link" style="font-size:medium">Photographer</a>
+                            <a class="nav-link" style="font-size:medium">Graphic designer</a>
+                            <a class="nav-link" style="font-size:medium">Animator</a>
+                            <a class="nav-link" style="font-size:medium">Print maker</a>
+                            <a class="nav-link" style="font-size:medium">Industrial designer</a>
+                            <a class="nav-link" style="font-size:medium">Food decorator(ex: cakes)</a>
+                            <a class="nav-link" style="font-size:medium">Jewellery designer</a>
+                            <a class="nav-link" style="font-size:medium">Furniture artist</a>
+                            <a class="nav-link" style="font-size:medium">Digital artist</a>
+                            <a class="nav-link" style="font-size:medium">Art directors</a>
+                            <a class="nav-link" style="font-size:medium">Stone/glass or other material designers</a>
+                            <a class="nav-link" style="font-size:medium">Stamp designers</a>
+                            <a class="nav-link" style="font-size:medium">Font designers</a>
+                            <a class="nav-link" style="font-size:medium">Ceramic artist</a>
+                            <a class="nav-link" style="font-size:medium">Interior designer</a>
+                            <a class="nav-link" style="font-size:medium">Architect</a>
+                        </div>
+                    <div id="stab-4" style="display: none;">
+                        <h3 style="font-size: large;"><b>Job opportunities for the Selected Skill...!</b> </h3>
+                        <a class="nav-link" style="font-size:medium" >Marketing Specialist</a>
+                        <a class="nav-link" style="font-size:medium" >Social Media Manager</a>
+                        <a class="nav-link" style="font-size:medium" >Search Engine Optimization Specialist</a>
+                        <a class="nav-link" style="font-size:medium" >Email Marketing Manager</a>
+                        <a class="nav-link" style="font-size:medium" >Web Content Writer</a>
+                        <a class="nav-link" style="font-size:medium" >Web Producer</a>
+                        <a class="nav-link" style="font-size:medium" >Product Manager</a>
+                        <a class="nav-link" style="font-size:medium" >Marketing Analyst</a>
+                        <a class="nav-link" style="font-size:medium" >Advertising Coordinator</a>
+                        <a class="nav-link" style="font-size:medium" >Advertising Manager</a>
+                        <a class="nav-link" style="font-size:medium" >Public Relations Manager</a>
+                        <a class="nav-link" style="font-size:medium" >Brand Manager</a>
+                        <a class="nav-link" style="font-size:medium" >Media Buyer</a>
+                        <a class="nav-link" style="font-size:medium" >Chief Marketing Officer</a>
+                        <a class="nav-link" style="font-size:medium" >Digital Marketing Manager</a>
+                        <a class="nav-link" style="font-size:medium" >Digital Marketing Director</a>
+                        <a class="nav-link" style="font-size:medium" >eCommerce Manager</a>
+                        <a class="nav-link" style="font-size:medium" >Sales representative</a>
+                        <a class="nav-link" style="font-size:medium" >Content marketer</a>
+                        <a class="nav-link" style="font-size:medium" >Brand marketer</a>
+                        <a class="nav-link" style="font-size:medium" >Event marketing</a>
+                    </div>
+                    <div id="stab-5" style="display: none;">
+                        <h3 style="font-size: large;"><b>Job opportunities for the Selected Skill...!</b> </h3>
+                        <a class="nav-link" style="font-size:medium" >Real estate</a>
+                        <a class="nav-link" style="font-size:medium" >Merchandiser</a>
+                        <a class="nav-link" style="font-size:medium" >Wedding planner</a>
+                        <a class="nav-link" style="font-size:medium" >Travel agent</a>
+                        <a class="nav-link" style="font-size:medium" >Event manager</a>
+                        <a class="nav-link" style="font-size:medium" >Archivist</a>
+                        <a class="nav-link" style="font-size:medium" >Construction superintendent</a>
+                        <a class="nav-link" style="font-size:medium" >Museum manager</a>
+                        <a class="nav-link" style="font-size:medium" >Administrator</a>
+                        <a class="nav-link" style="font-size:medium" >Library specialist</a>
+                        <a class="nav-link" style="font-size:medium" >Technician</a>
+                        <a class="nav-link" style="font-size:medium" >Accountant</a>
+                        <a class="nav-link" style="font-size:medium" >Virtual assistant</a>
+                    </div>
+                    <div id="stab-6" style="display: none;">
+                        <h3 style="font-size: large;"><b>Job opportunities for the Selected Skill...!</b> </h3>
+                        <a class="nav-link" style="font-size:medium" >Human Resource</a>
+                        <a class="nav-link" style="font-size:medium" >Consultant</a>
+                        <a class="nav-link" style="font-size:medium" >Project manager</a>
+                        <a class="nav-link" style="font-size:medium" >Market research</a>
+                        <a class="nav-link" style="font-size:medium" >Information technology</a>
+                        <a class="nav-link" style="font-size:medium" >Athlete or sports person</a>
+                        <a class="nav-link" style="font-size:medium" >Costumer service workers</a>
+                    </div>
+                    <div id="stab-7" style="display: none;">
+                        <h3 style="font-size: large;"><b>Job opportunities for the Selected Skill...!</b> </h3>
+                        <a class="nav-link" style="font-size:medium" >Psychologists</a>
+                        <a class="nav-link" style="font-size:medium" >Therapists</a>
+                        <a class="nav-link" style="font-size:medium" >Doctors</a>
+                        <a class="nav-link" style="font-size:medium" >Lawyers</a>
+                        <a class="nav-link" style="font-size:medium" >Training/development specialists</a>
+                        <a class="nav-link" style="font-size:medium" >Counsellors</a>
+                        <a class="nav-link" style="font-size:medium" >Teachers</a>
+                        <a class="nav-link" style="font-size:medium" >Medical workers</a>
+                        <a class="nav-link" style="font-size:medium" >Financial advisors</a>
+                        <a class="nav-link" style="font-size:medium" >Human service assistants</a>
+                        <a class="nav-link" style="font-size:medium" >Social workers</a>
+                        <a class="nav-link" style="font-size:medium" >Marketing/research analysts</a>
+                        <a class="nav-link" style="font-size:medium" >Human resources</a>
+                        <a class="nav-link" style="font-size:medium" >Child care</a>
+                        <a class="nav-link" style="font-size:medium" >Editors</a>
+                        <a class="nav-link" style="font-size:medium" >Journalist</a>
+                        <a class="nav-link" style="font-size:medium" >Reporters</a>
+                        <a class="nav-link" style="font-size:medium" >Receptionist</a>
+                        <a class="nav-link" style="font-size:medium" >Office manager</a>
+                        <a class="nav-link" style="font-size:medium" >Personal assistant</a>
+                        <a class="nav-link" style="font-size:medium" >Fitness trainer/coach</a>
+
+                    </div>
+                    <div id="stab-8" style="display: none;">
+                        <h3 style="font-size: large;"><b>Job opportunities for the Selected Skill...!</b> </h3>
+                        <a class="nav-link" style="font-size:medium" >Principals</a>
+                        <a class="nav-link" style="font-size:medium" >HR managers</a>
+                        <a class="nav-link" style="font-size:medium" >Coach</a>
+                        <a class="nav-link" style="font-size:medium" >Construction managers</a>
+                        <a class="nav-link" style="font-size:medium" >Chief executive</a>
+                        <a class="nav-link" style="font-size:medium" >Judge</a>
+                        <a class="nav-link" style="font-size:medium" >Recruiter</a>
+                        <a class="nav-link" style="font-size:medium" >Project managers</a>
+                        <a class="nav-link" style="font-size:medium" >Lawyer</a>
+                        <a class="nav-link" style="font-size:medium" >Restaurant manager</a>
+                        <a class="nav-link" style="font-size:medium" >Sales</a>
+                        <a class="nav-link" style="font-size:medium" >Entreprenuer</a>
+                        
+                    </div>
+                    <div id="stab-9" style="display: none;">
+                        <h3 style="font-size: large;"><b>Job opportunities for the Selected Skill...!</b> </h3>
+                        <a class="nav-link" style="font-size:medium" >IT jobs
+                        <a class="nav-link" style="font-size:medium" >Management & Business related jobs</a>
+                        <a class="nav-link" style="font-size:medium" >Banking jobs</a>
+                        <a class="nav-link" style="font-size:medium" >Jobs in railways</a>
+                        <a class="nav-link" style="font-size:medium" >Jobs in Defence sector</a>
+                        <a class="nav-link" style="font-size:medium" >SSC (Staff Selection Commission) jobs</a>
+                        <a class="nav-link" style="font-size:medium" >Groups & Civil Service jobs</a>
+
+                    </div>
+                </div>
+                    <div id="tab-3" style="display:none">
+                        <div class="col-lg-6 col-md-6" style="text-align: center;">
+                            <h3 style="font-size: large;"><b>Job opportunities in ADHVAN...!</b> </h3>
+                            <a class="nav-link" style="font-size:medium">IT Jobs</a>
+                            <a class="nav-link" style="font-size:medium">Management & Business related Jobs</a>
+                            <a class="nav-link" style="font-size:medium">Banking Jobs</a>
+                            <a class="nav-link" style="font-size:medium">Jobs in railways</a>
+                            <a class="nav-link" style="font-size:medium">Jobs in Defence sector</a>
+                            <a class="nav-link" style="font-size:medium">SSC (Staff Selection Commission) Jobs</a>
+                            <a class="nav-link" style="font-size:medium">Groups & Civil Service Jobs</a>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="text-align: center;">
+                                <div class="card-body" style="border: 2px solid black;">
+                                  <h5 class="card-title" style="font-size: x-large;">Adhvan</h5>
+                                  <p class="card-text" style="font-size: medium;">Self-guage your skills on</p>
+                                  <p style="font-size: medium;">Logical<br>&<br>Coding</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+            
+            
+        
+
+            
+
+
+            <!-- FAQs Start -->
+            <div class="faqs">
+                <div class="section-header">
+                    <h2>our programmes</h2>
+                </div> 
+                <div class="flu">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                           
+                            <div id="accordion">
+                               
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" id="flu1" aria-expanded="true">
+                                         <b class="flu2">COLLEGE DEVELOPMENT PROGRAMME</b>
+                                        </a>
+                                   
+                                </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <p class="dich">
+                                            Through AvasyuTech college development program, we collaborate with colleges and enhance the innate skills in the students. We do so through our unique programs that initially test the respective skills in every individual student and then equip them with the right amount of feed in their area of interest for prospering their career. We also hone the students in such a way that they turn up to be industry ready upon completion of their course and compatible with the necessary skills to bag their dream job.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" id="flu1">
+                                           <b class="flu2">SCHOOL DEVELOPMENT PROGRAMME</b>
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" data-parent="#accordion">
+                                        <p class="dich">
+                                            We AvasyuTech are making our contribution to interact and develop budding students right from the school. Upon collaboration with schools, we assure dual benefit to both students as well as teachers. We do with various faculty development programs that enable teachers to instill the right way and right amount of knowledge in students. And through student development programs, we derive the innate capabilities of students and strengthen them in that particular direction thereby enabling them to choose their career appropriately.
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                           
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/faqs.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <!-- FAQs End -->
+
+            <div class="section-header">
+                <h2>Projects Statistics</h2>
+            </div>
+            <div id="projectFacts" class="sectionClass">
+                <div class="fullWidth eight columns">
+                    <div class="projectFactsWrap ">
+                        <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                            <p id="number1" class="number">9237</p>
+                            <span></span>
+                            <p>Lines of Code</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                            <p id="number2" class="number">18</p>
+                            <span></span>
+                            <p>Happy clients</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                            <p id="number3" class="number">1576</p>
+                            <span></span>
+                            <p>Hours Spent</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                            <p id="number4" class="number">8</p>
+                            <span></span>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Testimonial Start -->
+            <div class="testimonial">
+                <div class="container">
+                    <div class="section-header" style="margin-bottom: 20px;">
+                        <h2>Clients Review</h2>
+                        <p>“A customer talking about their experience with you is worth ten times that which you write or say about yourself.”</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="testimonial-slider-nav">
+                                <div class="slider-nav"><img src="img/bha.jpeg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/chan.jpg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/anu.jpeg" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="img/kaushik.jpg" alt="Testimonial"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="testimonial-slider">
+                                <div class="slider-item">
+                                    <h3>Bhaskar M</h3>
+                                    <h4>Adcon Founder</h4>
+                                    <p> We are really excited to extend our services around the globe. How can you reach the world without any virtual platform? Yes without a virtual platform it’s difficult to reach the customers at nook corners of the globe. “AVASYU TECHNICALS” designed us a great online webpage that portray all our services in a proper understandable manner and also user friendly. The team of “AVASYU TECHNICALS” are working at their best.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Dr. Chandramouli</h3>
+                                    <h4>Laalm Founder</h4>
+                                    <p> From the past few years we are eagerly looking for a digitalization of our services to reach out the customers in an easy way. Then I got many recommendations from some of my friends about “AVASYU TECHNICALS” and their best services to their clients.  As I believed their services that are pretty good, affordable and they think out of box. Kudos to their support team, managed the things really well for us.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Anoosha</h3>
+                                    <h4>TheCozyLabel Founder</h4>
+                                    <p>“AVASYU TECHNICALS” has given us the best designed and attractive e commerce website  which perfectly shows up our superior products in a great possible way. Efficiency and performance of the team is really at its best and made everything easy for their clients as well as for customers.
+                                        Really I am amazed with their work and ready to give a chance to get surprised.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Dr. M.K. Kaushik</h3>
+                                    <h4>Viba CEO</h4>
+                                    <p>We are committed organization with entrepreneurial interface and one of the platforms that brings out the best talents and enable them explore in their domain of interest.. “AVASYU TECHNICALS” has designed and delivered a best online platform which portrays our views and goals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+
+
+            <!-- News Start -->
+            <div class="news">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img class="obj" src="img/dev.jpg" class="do" alt="Image">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="section-title">A Juvenile Transformation Genre</h2>
+                            <p>
+                                To committing a crime is something pre-fed into a human brain and the most influenced are the children whom we call juveniles upon doing a crime. Subjecting to a punishment and counseling doesn't seem to have a changing impact in them.
+                            </p>
+                            <p>
+                                We AvasyuTech, as an EdTech company are bringing forward a changing strata to transform juveniles and turn them out as responsible individuals to lead a respectable life in the society. Moreover we do make them employable and also provide employment opportunities.
+                            </p>
+                            <p>
+                                Rather than just counseling and leaving the learning to them, we keep track of every individual juvenile right from our initial step of psychometric analysis to making them an employable individual as assured.
+                            </p>
+                            <a class="btn" href="./img/png.pdf" download="./img/png.pdf">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- News End -->
+
+            <!-- <div class="service">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Partners</h2> 
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/ed.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/sk.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/sk2.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/viba.png" alt="Service">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6" style="display: flex; align-items: center;">
+                                <img class="partner-img" src="img/outs.png" alt="Service">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+ -->
+
+
+
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="footer-about">
+                                <h2>About Us</h2>
+                                <p>
+                                    AVASYU is a platform which enables students to ascertain the innate capabilities in oneself, leading a journey towards their dream career. A great place to step in for student enthusiasts..!
+
+
+
+                                </p>
+                                <br>
+                                <p><i class="fa fa-map-marker-alt"></i>Warangal, Telangana, India</p>
+                                <p><i class="fa fa-phone-alt"></i>+91 9100471788</p>
+                                <p><a class="footer-link-color" href="mailto:avasyutechnicals@gmail.com"><i class="fa fa-envelope"></i>avasyutechnicals@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="footer-link">
+                                        <h2>Useful Link</h2>
+                                        <a href="">About Us</a>
+                                        <a href="">Our Story</a>
+                                        <a href="">Our Services</a>
+                                        <a href="">Our Portfolio</a>
+                                        <a href="">Our Projects</a>
+                                        <a href="">Contact Us</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="footer-link">
+                                        <h2>Useful Link</h2>
+                                        <a href="">Our Clients</a>
+                                        <a href="">Clients Review</a>
+                                        <a href="">Ongoing Customer</a>
+                                        <a href="">Customer Support</a>
+                                        <a href="">FAQs</a>
+                                        <a href="">Site Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <p><a href="">Avasyu © 2020</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
